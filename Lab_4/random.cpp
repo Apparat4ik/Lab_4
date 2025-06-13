@@ -49,12 +49,6 @@ vector<int> GenerateFibonacciInitialValues(int k, int m) {   // вычислен
     for (int i = 2; i < k; ++i) {
         fib[i] = (fib[i - 1] + fib[i - 2]) % m;
     }
-
-    cout << "Сгенерированные значения Фибоначчи:" << endl;
-    for (int i = 0; i < k; ++i) {
-        cout << "S" << i << " = " << fib[i] << endl;
-    }
-    cout << endl;
     
     return fib;
 }
